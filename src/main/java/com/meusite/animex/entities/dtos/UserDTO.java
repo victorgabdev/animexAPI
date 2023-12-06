@@ -10,10 +10,10 @@ public class UserDTO {
     private String name;
     private String email;
 
-    public UserDTO(User user) {
-        this.id = user.getId();
-        this.name = user.getName();
-        this.email = user.getEmail();
+    public UserDTO(UUID id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
     }
 
     public UUID getId() {
